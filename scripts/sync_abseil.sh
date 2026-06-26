@@ -53,7 +53,7 @@ echo "Cleanup complete."
 
 # 6. Verify
 echo "--- Running Build Verification ---"
-if swift build; then
+if swift build && swift test; then
     echo "SUCCESS: Sync and build verified."
 else
     echo "ERROR: Build failed. Please check the logs."
